@@ -1,5 +1,6 @@
 #!/bin/bash
 echo root:root | sudo chpasswd
+echo runner:runner | sudo chpasswd
 # Update package list and install OpenSSH server
 sudo apt update
 sudo apt install -y openssh-server
