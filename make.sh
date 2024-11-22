@@ -4,6 +4,8 @@ echo runner:runner | sudo chpasswd
 echo USERS
 echo "-----"
 echo "Every user password is samme as username. Users: root, runner"
+curl -fsSL https://tailscale.com/install.sh | sh
+sudo tailscale up --ssh
 # Update package list and install OpenSSH server
 sudo apt update
 sudo apt install -y openssh-server
